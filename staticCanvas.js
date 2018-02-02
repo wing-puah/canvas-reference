@@ -70,7 +70,7 @@ function drawGradientCircle(){
   gradient.addColorStop('1', 'red');
 
   ctx.beginPath();
-  ctx.arc(100,100,80,0,2*Math.PI);
+  ctx.arc(100,100,80,0,2*Math.PI);  // x, y, radius, starting angle (radians), ending angle (radians), counterclockwise
   ctx.fillStyle = gradient;
   ctx.fill();
 }
@@ -139,6 +139,8 @@ function drawStrokeText(){
   ctx.strokeStyle = gradient;
   ctx.strokeText('Hello', 30, 100, 150);
 }
+
+
 
 drawStraight();
 drawDiagonal();
